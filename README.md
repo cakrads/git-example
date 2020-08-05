@@ -11,6 +11,14 @@ Use github UI to fork this repo to your repository, look top right screen..
 git clone https://github.com/[username]/[this-repository]
 ```
 
+## CREATE UPSTREAM REMOTE
+git remote add upstream https://github.com/cakrads/git-example.git
+
+## CHANGE TO DEVELOP BRANCH  
+```
+git checkout develop
+```
+
 ## CREATE NEW BRANCH
 Create new branch, the branch name is feature-[your-name]
 ```
@@ -36,6 +44,13 @@ example, if we put n=10 will show:
 insert your bio in bio.txt file.
 just put your fullname and your github.
 
+## PULL FROM UPSTREAM
+pull from upstream to get the newest update
+```
+git pull upstream develop
+```
+fix if there is a conflict
+
 ## ADD YOUR CHANGE
 check your change once again, and add your change 
 ```
@@ -45,7 +60,23 @@ git add .
 
 ## COMMIT YOUR CHANGE
 ```
-git commit -m "add feature [my-name]"
+git commit -m "add feature [your-name]"
 ```
 
-## CHECKOUT TO 
+## CHECKOUT TO BRANCH DEVELOP
+```
+git checkout develop
+```
+
+## MERGE YOUR FEATURE BRANCH TO BRANCH DEVELOP
+```
+git merge feature-[your-name]
+```
+
+## PUSH TO YOUR REPOSITORY
+```
+git push origin develop
+```
+
+## CREATE MERGE REQUEST IN GITHUB
+create merge request, and wait till merge
