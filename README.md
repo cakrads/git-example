@@ -91,5 +91,5 @@ git merge feature-[your-name]
 git push origin develop
 ```
 
-### 14. Create Merge Request In Github
-create merge request, and wait till merge
+### 14. Create Pull Request In Github
+create pull request to cakrads/git-example, and wait till merge
