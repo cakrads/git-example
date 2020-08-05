@@ -10,7 +10,7 @@
 				echo "GOOD ";
 			}
 			else if ($i == 4) {
-				echo("BEST ")
+				echo("BEST ");
 			}else if ($i == 8) {
 				echo "AWESOME ";
 			}else{
