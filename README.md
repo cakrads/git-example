@@ -3,23 +3,35 @@
 
 # TO DO:
 
-## FORK THIS REPO
+### 1. Frok this Repo
 Use github UI to fork this repo to your repository, look top right screen..
 
-## CLONE TO YOUR LOCAL
+### 2. Clone to your Local 
 ```
 git clone https://github.com/[username]/[this-repository]
 ```
 
-## CREATE UPSTREAM REMOTE
+### 3. Create Upstream Remote
 git remote add upstream https://github.com/cakrads/git-example.git
+check use 
+```
+git remote -v
+```
 
-## CHANGE TO DEVELOP BRANCH  
+it should looks like this:
+```
+origin      https://github.com/[username]/git-example (fetch)
+origin      https://github.com/[username]/git-example (push)
+upstream    https://github.com/cakrads/git-example.git (fetch)
+upstream    https://github.com/cakrads/git-example.git (push)
+```
+
+### 4. Change to Branch Develop  
 ```
 git checkout develop
 ```
 
-## CREATE NEW BRANCH
+### 5. Create New Branch
 Create new branch, the branch name is feature-[your-name]
 ```
 git branch -b feature-cakra
@@ -30,53 +42,54 @@ check if your branch has been created
 git branch
 ```
 
-## CREATE YOUR OWN FOLDER
+### 6. Create Your Own Folder do The Task
 1. Create your own folder in person folder
-2. create index.js or php.js
+2. create index.js or index.php. Use one, PHP OR JS
 3. Create algorithm for show number 1 until n, 
 but change all a multiple of two to "GOOD", and a multiple of four to "BEST".
 And change a multiple of two and four to "AWESOME".
 example, if we put n=10 will show:
 ```1 GOOD 3 BEST 5 6 7 AWESOME 9 10```
 4. you can copy the structure from person/cakra/index.js
+5. if you use PHP, just create something like point 4.
 
-## INSERT YOUR BIO
+### 7. Insert Your Bio
 insert your bio in bio.txt file.
-just put your fullname and your github.
+just put your fullname
 
-## PULL FROM UPSTREAM
+### 8. Pull From Upstream
 pull from upstream to get the newest update
 ```
 git pull upstream develop
 ```
 fix if there is a conflict
 
-## ADD YOUR CHANGE
+### 9. Add Your Changed
 check your change once again, and add your change 
 ```
 git add .
 ```
 *will add all your change to stage
 
-## COMMIT YOUR CHANGE
+### 10. Commit Your Changed
 ```
 git commit -m "add feature [your-name]"
 ```
 
-## CHECKOUT TO BRANCH DEVELOP
+### 11. Checkout To Branch Develop
 ```
 git checkout develop
 ```
 
-## MERGE YOUR FEATURE BRANCH TO BRANCH DEVELOP
+### 12. Merge Your Feature Branch to Branch Develop
 ```
 git merge feature-[your-name]
 ```
 
-## PUSH TO YOUR REPOSITORY
+### 13. Push to Your Repository
 ```
 git push origin develop
 ```
 
-## CREATE MERGE REQUEST IN GITHUB
-create merge request, and wait till merge
+### 14. Create Pull Request In Github
+create pull request to cakrads/git-example, and wait till merge
