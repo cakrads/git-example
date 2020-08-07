@@ -12,7 +12,10 @@ git clone https://github.com/[username]/[this-repository]
 ```
 
 ### 3. Create Upstream Remote
+create upstream remote..
+```
 git remote add upstream https://github.com/cakrads/git-example.git
+```
 check use 
 ```
 git remote -v
@@ -25,6 +28,15 @@ origin      https://github.com/[username]/git-example (push)
 upstream    https://github.com/cakrads/git-example.git (fetch)
 upstream    https://github.com/cakrads/git-example.git (push)
 ```
+
+explanation:
+so we will have two repo, origin and upstream,
+origin is our repo, the ownership is us, the developer.
+upstream is main repo, the ownership is the maintener.
+we can pull from origin and upstream, but we can only push to origin.
+If we wan't push our changed/feature to upstream(main) repository
+we must use pull request to upstream, 
+and let the maintener review our code (code review).
 
 ### 4. Change to Branch Develop  
 ```
